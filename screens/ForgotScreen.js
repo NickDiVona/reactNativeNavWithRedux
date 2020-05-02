@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
-class Screen2 extends Component {
+class ForgotScreen extends Component {
   render() {
     return (
       <View style={styles.containerStyle}>
-        <Text>Screen 2</Text>
+        <Text>Forgot password?</Text>
         <TouchableOpacity
+          style={styles.goBackButtonStyle}
           onPress={() => this.props.navigation.navigate('Login')}
-          style={styles.logOutButtonStyle}
         >
           <View>
-            <Text>Logout</Text>
+            <Text>Nevermind, go back</Text>
           </View>
         </TouchableOpacity>
       </View>
@@ -19,17 +19,17 @@ class Screen2 extends Component {
   }
 }
 
-export default Screen2;
+export default ForgotScreen;
 
 const styles = StyleSheet.create({
   containerStyle: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'lightsalmon'
+    backgroundColor: 'plum'
   },
-  logOutButtonStyle: {
-    backgroundColor: 'mediumaquamarine',
+  goBackButtonStyle: {
+    backgroundColor: 'mediumpurple',
     width: '80%',
     height: 40,
     justifyContent: 'center',
